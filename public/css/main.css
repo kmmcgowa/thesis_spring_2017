@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  color: #fff;
+  line-height: 1.6;
+  font-size: 16pt; }
+
+body {
+  overflow: hidden; }
+
+#imgcontainer {
+  margin: 5vh 5vw;
+  background-image: url("../imgs/mountain.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center; }
+
+#contentcontainer {
+  align-self: center;
+  width: 800px;
+  text-align: justify;
+  background-color: #4D9099;
+  padding: 2.5%; }
+
+#title {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-align: right;
+  padding: 5% 0 3%; }
+
+#bar {
+  height: 10px;
+  width: 900px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translate(-100px); }
+
+#content {
+  font-family: 'Lora', serif;
+  color: #fff; }
+
+#content1, #content2 {
+  padding: 5% 0; }
+
+#middleSection {
+  padding: 5% 0; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans Condensed', sans-serif; }
+
+h1 {
+  font-size: 4.2rem; }
+
+h2 {
+  font-size: 3.56rem; }
+
+h3 {
+  font-size: 2.92rem; }
+
+h4 {
+  font-size: 2.28rem; }
+
+h5 {
+  font-size: 1.64rem; }
+
+#imgcontainer.aboutimg {
+  background-image: url("../imgs/forrest.jpg"); }
+
+#aboutContainer {
+  align-self: center;
+  background-color: #fff;
+  width: 90%;
+  height: 90%;
+  color: #333;
+  font-family: 'Lora', serif;
+  display: flex;
+  flex-wrap: wrap; }
+  #aboutContainer .superTitle {
+    flex-basis: 100%; }
+    #aboutContainer .superTitle h1 {
+      text-align: center;
+      font-family: 'Open Sans Condensed', sans-serif; }
+  #aboutContainer .column {
+    width: 49%;
+    height: 80%;
+    overflow: scroll;
+    display: relative; }
+    #aboutContainer .column h3, #aboutContainer .column h4 {
+      text-align: center; }
+    #aboutContainer .column p {
+      padding: 15px 25px 15px; }
+  #aboutContainer .column.bar {
+    width: 2px;
+    height: 80%;
+    background-color: #333;
+    overflow: hidden; }
+
+video {
+  width: 100%;
+  padding: 25px; }
+
+.green {
+  color: #00c800; }
+
+.blue {
+  color: #0000c8; }
+
+.red {
+  color: #c80000; }
+
+.underline {
+  text-decoration: underline; }
+
+.small {
+  font-size: .8em;
+  padding-left: 25px; }
+
+#img90 {
+  width: 200px;
+  float: right; }
+
+.clearfix {
+  clear: both; }
+
+.downArrowCon {
+  flex-basis: 50%; }
+  .downArrowCon .downArrow {
+    width: 10%;
+    height: 25px;
+    padding-left: 45%; }
+
+.modal {
+  z-index: 999; }
+
+.explode {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; }
+
+.fybd {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  z-index: 999; }

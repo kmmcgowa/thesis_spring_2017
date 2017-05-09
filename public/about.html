@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tangible HTML</title>
+	<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans+Condensed:700" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="imgcontainer" class="aboutimg">
+		<div id="aboutContainer">
+			<div class="superTitle"><h1>Tangible HTML</h1></div>
+			<div class="column">
+				<h3>About</h3>
+				<p>In this increasingly complex technical age, the ability to write code is becoming evermore significant. Traditional methods of programming involve sitting at a computer learning the individual functions of HTML, CSS, Javascript, etc., and piecing them together to generate a coherent web page. Tangible HTML is a new approach to web development education for beginners. Centered around form and content, the project proposes an educational methodology that looks beyond the computer to focus on programmatic basics in a real space.</p>
+				
+				<p>Tangible HTML, likening itself with toy building blocks, is built in a tangible space. To encourage an imaginative approach, users are presented with content parsed from familiar childhood storybooks. By limiting the creative scope available to users, Tangible HTML asks users to focus both on the HTML and narrative they are constructing. As users assemble their webpage, they learn the basics of language and the structure that composes all HTML documents. By abstracting the educational experience, Tangible HTML hopes to inspire future generations to further explore the web development process.</p>
+				<h4>HTML</h4>
+				<p>
+					HTML stands for Hyper Text Markup Language. While most consider it a <i>coding</i> language, it's really only a markup language, meaning its only for formatting and styling content.
+				</p>
+				<p>
+					HTML works by surrounding content with semantic tags that help display your content on screen. <img id="img90" src="./imgs/1990.jpg" alt="1990's website">The end result is that looks like a website out of the 1990's. The styling is taken care of by CSS, but that's a whole different ball game and I have taken care of it for you.
+				</p>
+				<div class="clearfix"></div>
+				<p>
+					Every<sup>*1</sup> HTML element needs and opening <code>&lt;&gt;</code> and closing <code>&lt;/&gt;</code>tag. This ensures the browser knows exaclty what to format and how. Forgetting an opening tag will not format anything and leaving off the closing tag will ensure all content after the opening is formatted the same. Modern browsers are smart enough to figure out your mistakes sometime, but for best practices and to ensure your site worls across all systems, don't forget the tags.
+				</p>
+				<h4>The Blocks</h4>
+				<p>
+					<span class="green">Green</span> represent your <code>head tags</code>. Thes are the blocks that signify the title of your page and other important text. Any text inside the head tags is usually bigger and sometimes bolder than other text on screen.
+				</p>
+				<p>
+					<span class="underline">White</span> blocks are to be placed in the black squares on the sandbox. These are your content block. They only contain the content you wish to see on sceen and no html value.
+				</p>
+				<p>
+					<span class="blue">Blue</span> blocks are your semantic containers. They are used to help seperate your code into sections and avoid confusing jumbles of code. They are sematic for their use in SEO, <i>Search Engine Optimization</i>. When Goole uses it's computer bots to scan the web, they read the semantic tags to help understand what is on your page. to give you a better score with their search engine.
+				</p>
+				<p>
+					<span class="red">Red</span> blocks represent your text decoration tags. These are special little tags that only alter the way text is shown on screen. In this very text I have used several including <code> i, em,</code> and <code>code </code>. These tags make text italic, bold, and formatted as code to help draw attention to them.
+				</p>
+				<ol class="small">
+					<li>There are some tages such as image tags that do not require the closing tag.</li>
+				</ol>
+			</div>
+			<div class="column bar"></div>
+			<div class="column">
+				<h3>How to Start</h3>
+				<p>
+					<i>Tangible HTML</i> Is going to walk you through the frist steps in creating a HTML document for viewing on the web. To start look at the '<i>sandbox</i>' in the middle of the table. The surface has been marked out with the places to put down blocks of code. 
+				</p>
+				<video autoplay loop src="./imgs/hand.mp4"></video>
+				<p>
+					The blocks are color coded to help guide you through the process. You can read in the other column about the meaning of the blocks.
+				</p>
+			</div>
+			<div class="downArrowCon"><img class="downArrow" src="imgs/down-arrow.gif" alt="scroll down"></div>
+			<div class="downArrowCon"><img class="downArrow" src="imgs/down-arrow.gif" alt="scroll down"></div>
+		</div>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.4/socket.io.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+		var socket = io('http://localhost:8000');
+
+		// when data is sent down over socket, save it to ids[] and update page
+		socket.on('fybd', function(data) {
+			console.log('here 2');
+			fybd();
+		});
+
+	</script>
+</body>
+</html>
